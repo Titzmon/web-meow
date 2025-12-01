@@ -1,74 +1,74 @@
-﻿// ==================== SCENARIO DATA ====================
+// ==================== SCENARIO DATA (ENGLISH) ====================
 
 const scenarios = {
     1: {
-        question: "Tình huống 1A: Khách muốn đổi gà cay sang gà không cay...",
+        question: "Scenario 1A: A customer wants to change their spicy chicken to non-spicy. What should you do?",
         options: [
-            { text: "A. Xin lỗi và đổi ngay.", isCorrect: true },
-            { text: "B. Không cho đổi.", isCorrect: false },
-            { text: "C. Tỏ thái độ rồi đổi.", isCorrect: false }
+            { text: "A. Apologize and exchange it immediately.", isCorrect: true },
+            { text: "B. Refuse to change it.", isCorrect: false },
+            { text: "C. Show attitude but change it anyway.", isCorrect: false }
         ],
-        correctMsg: "Chính xác! Luôn ưu tiên khách hàng.",
-        incorrectMsg: "Chưa đúng. Hãy thân thiện và hỗ trợ khách."
+        correctMsg: "Correct! Always prioritize customer satisfaction.",
+        incorrectMsg: "Not quite. Stay polite and support the customer."
     },
 
     101: {
-        question: "Tình huống 1B: Khách hỏi dị ứng nhưng bạn không chắc...",
+        question: "Scenario 1B: A customer asks about allergens but you're not sure about the answer. What do you do?",
         options: [
-            { text: "A. Đoán đại.", isCorrect: false },
-            { text: "B. Xin phép kiểm tra thông tin.", isCorrect: true },
-            { text: "C. Nói 'không biết' rồi bỏ qua.", isCorrect: false }
+            { text: "A. Make a random guess.", isCorrect: false },
+            { text: "B. Politely ask to double-check the information.", isCorrect: true },
+            { text: "C. Say 'I don’t know' and ignore it.", isCorrect: false }
         ],
-        correctMsg: "Đúng! Tuyệt đối không đoán khi liên quan dị ứng.",
-        incorrectMsg: "Chưa chuẩn rồi!"
+        correctMsg: "Correct! Never guess when it comes to allergies.",
+        incorrectMsg: "Not correct. You must verify information safely."
     },
 
     2: {
-        question: "Tình huống 2A: Khách la mắng vì chờ 15 phút...",
+        question: "Scenario 2A: A customer is angry because they've waited 15 minutes. What is the best response?",
         options: [
-            { text: "A. Gắt lại.", isCorrect: false },
-            { text: "B. Giữ bình tĩnh + xin lỗi.", isCorrect: true },
-            { text: "C. Giải thích dài dòng.", isCorrect: false }
+            { text: "A. Get angry back.", isCorrect: false },
+            { text: "B. Stay calm and apologize for the wait.", isCorrect: true },
+            { text: "C. Give a long explanation.", isCorrect: false }
         ],
-        correctMsg: "Chuẩn! Bình tĩnh – xin lỗi – giải quyết.",
-        incorrectMsg: "Không nên gắt hoặc giải thích quá nhiều."
+        correctMsg: "Correct! Stay calm, apologize, and focus on solving the issue.",
+        incorrectMsg: "Not the best choice. Avoid arguing or over-explaining."
     },
 
     201: {
-        question: "Tình huống 2B: Phiếu giảm giá hết hạn 2 ngày...",
+        question: "Scenario 2B: A coupon expired 2 days ago. What do you do?",
         options: [
-            { text: "A. Từ chối thẳng.", isCorrect: false },
-            { text: "B. Giải thích nhẹ + đề xuất khuyến mãi khác.", isCorrect: true },
-            { text: "C. Lén cho qua.", isCorrect: false }
+            { text: "A. Refuse immediately.", isCorrect: false },
+            { text: "B. Politely explain and offer another promotion.", isCorrect: true },
+            { text: "C. Secretly accept it.", isCorrect: false }
         ],
-        correctMsg: "Đúng! Vừa giữ quy tắc vừa giữ khách.",
-        incorrectMsg: "Chưa đúng rồi."
+        correctMsg: "Correct! Follow policy but still provide good service.",
+        incorrectMsg: "Not quite. You must balance rules and hospitality."
     },
 
     3: {
-        question: "Tình huống 3A: Sau khi trả tiền thừa, bạn cần nói gì?",
+        question: "Scenario 3A: After giving change, what should you say to the customer?",
         options: [
-            { text: "A. Chúc ngày tốt lành.", isCorrect: false },
-            { text: "B. Nhắc kiểm tra đơn hàng + cảm ơn.", isCorrect: true },
-            { text: "C. Im lặng.", isCorrect: false }
+            { text: "A. Have a nice day.", isCorrect: false },
+            { text: "B. Ask them to check their order and thank them.", isCorrect: true },
+            { text: "C. Say nothing.", isCorrect: false }
         ],
-        correctMsg: "Rất tốt! Nhắc kiểm tra đơn giảm khiếu nại.",
-        incorrectMsg: "Chưa đúng."
+        correctMsg: "Good! Reminding customers reduces complaints.",
+        incorrectMsg: "Not correct."
     },
 
     301: {
-        question: "Tình huống 3B: Đồng nghiệp làm rơi hộp khoai...",
+        question: "Scenario 3B: A coworker drops a fries box on the floor. What should you do?",
         options: [
-            { text: "A. Bỏ qua.", isCorrect: false },
-            { text: "B. Yêu cầu thay ngay.", isCorrect: true },
-            { text: "C. Nhắc sau ca.", isCorrect: false }
+            { text: "A. Ignore it.", isCorrect: false },
+            { text: "B. Ask them to replace it immediately.", isCorrect: true },
+            { text: "C. Tell them after the shift.", isCorrect: false }
         ],
-        correctMsg: "Chuẩn! Vệ sinh là số 1.",
-        incorrectMsg: "Phải xử lý ngay."
+        correctMsg: "Correct! Cleanliness and food safety come first.",
+        incorrectMsg: "Not correct. It must be handled immediately."
     }
 };
 
-// ==================== MODAL LOGIC ====================
+// ==================== MODAL LOGIC (unchanged) ====================
 
 const modal = document.getElementById("scenario-modal");
 const closeBtn = document.querySelector(".close-btn");
