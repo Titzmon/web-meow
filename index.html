@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KFC Employee Training - Gamified App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="dashboard-container">
+    <div class="header-title">KFC EMPLOYEE TRAINING</div>
+    <div class="header-subtitle">Gamified Skill Development</div>
+    <div class="top-modules">
+        <div class="module-card learning-journey">
+            <h3><i class="fas fa-gamepad icon"></i> Learning Journey</h3>
+            <p>Level up your skills through quests, challenges, and XP-based modules.</p>
+            <a href="game/meow_kfc.html" target="_blank" class="btn-primary">
+                <i class="fas fa-play"></i> Start Training
+            </a>
+        </div>
+        <div class="module-card ranking">
+            <h3><i class="fas fa-medal icon"></i> Ranking</h3>
+            <p>See how you compare with your teammates.</p>
+            <button class="btn-primary">View Leaderboard</button>
+        </div>
+    </div>
+    <div class="welcome-banner">
+        🔥 <b>Welcome to the KFC Flavor Academy – Where Training Meets Crispy Fun!</b> 🍗
+        <br>Earn XP by mastering fried chicken standards, customer service, and kitchen speed.
+    </div>
+    <div class="course-library">
+        <h2>Course Library</h2>
+        <div class="course-grid">
+            <div class="course-card">
+                <h4>Handling Customer Orders</h4>
+                <p>Practice taking orders, confirming combos, and avoiding mistakes.</p>
+                <button class="btn-enter" data-course-set="1, 101">Enter</button>
+            </div>
+            <div class="course-card">
+                <h4>Dealing with Difficult Situations</h4>
+                <p>Learn how to respond politely to complaints and high-pressure moments.</p>
+                <button class="btn-enter" data-course-set="2, 201">Enter</button>
+            </div>
+            <div class="course-card">
+                <h4>KFC Service Standards</h4>
+                <p>Follow proper greetings, service flow, and customer satisfaction steps.</p>
+                <button class="btn-enter" data-course-set="3, 301">Enter</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="scenario-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h3 style="color: var(--accent-purple);">Tình Huống Giả Lập</h3>
+        <div id="scenario-question"></div>
+        <div id="answer-options-container"></div>
+        <div id="feedback" class="feedback-message"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
