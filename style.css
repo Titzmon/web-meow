@@ -85,7 +85,7 @@ body {
     font-size: 1.2em;
 }
 
-/* --- Button chính --- */
+/* --- Button chÃ­nh --- */
 .btn-primary, a.btn-primary {
     background-color: var(--accent-purple);
     color: white;
@@ -272,5 +272,38 @@ body {
 
     .course-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+.feedback-marquee {
+    width: 100%;
+    overflow: hidden;
+    background: linear-gradient(90deg, #b30000, #e4002b);
+    color: #fff;
+    padding: 12px 0;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+.marquee-track {
+    display: flex;
+    gap: 50px;
+    width: max-content;
+    animation: marquee-scroll 25s linear infinite;
+}
+
+.marquee-track span {
+    white-space: nowrap;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+@keyframes marquee-scroll {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
     }
 }
